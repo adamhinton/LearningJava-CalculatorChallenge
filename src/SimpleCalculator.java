@@ -18,6 +18,23 @@ public class SimpleCalculator {
         this.secondNumber = secondNumber;
     }
 
+    public double getAdditionResult (){
+        return firstNumber + secondNumber;
+    }
 
+    public double getSubtractionResult (){
+        return firstNumber - secondNumber;
+    }
+
+    public double getMultiplicationResult (){
+        return firstNumber * secondNumber;
+    }
+
+    public double getDivisionResult (){
+        if(secondNumber == 0){
+            return 0;
+        }
+        return firstNumber / secondNumber;
+    }
 
 }
